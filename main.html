@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dynamic Resume Builder</title>
+</head>
+<body>
+    <div class="container">
+        <h1> Dynamic Resume Builder</h1>
+        <form id="resumeForm">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="profilepicture">Profile Picture:</label>
+                <input type="file" id="profilepicture" accept="image/*">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Education</legend>
+                <textarea id="education" rows="4" placeholder="Enter your education details"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Experience</legend>
+                <textarea id="experience" rows="4" placeholder="Enter your work experience"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Skills</legend>
+                <textarea id="skills" rows="4" placeholder="Enter your skills"></textarea>
+            </fieldset>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <div id="resumeOutput" class="resume-output">
+            <img id="displayPicture" class="profilepicture" alt="Profile Picture">
+            
+            <h2 id="displayName"></h2>
+            
+            <p id="displayEmail"></p>
+        
+            <p id="displayPhone"></p>
+            <h2>Education</h2>
+            <p id="displayEducation"></p>
+            <h2>Experience</h2>
+            <p id="displayExperience"></p>
+            <h2>Skills</h2>
+            <p id="displaySkills"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+ 
